@@ -1,0 +1,16 @@
+# pack-refs with: peeled fully-peeled sorted 
+bfc3aa06fd4efedf4956589004cd325c4ed6f65f refs/remotes/origin/configurable_list_syms
+99dc186df0ac6a22e79ac2813e7dfe65b8ccd86d refs/remotes/origin/custom_html_win
+4d7a4da2e8e2fff34126e32d8818ba93c66a8a75 refs/remotes/origin/dev
+b54fa1312cbfed4f65a5a2c0a6357629c35a8a3b refs/remotes/origin/markdown_globalext
+619f04f89861c58e5a6415a4f83847752928252d refs/remotes/origin/master
+86289a84930268c642add8ab10831124465fc8a3 refs/remotes/origin/path-handling
+d5ed58f763e4344067db458bb82a53ecbbae730a refs/remotes/origin/refactor-internal-state-handling
+5faf884dc60c3ebd27734fe5f649acfb92025af8 refs/tags/v2.1
+2f95a6a651bcc388af466e7377ae3ded3cfcc035 refs/tags/v2.2
+3bd3d9b86036b21aecd69f0a1e572643d626c280 refs/tags/v2.2.1
+129c2818106bdb9230bbd99ee8eb81fa47c7a414 refs/tags/v2.3
+6766c37ce09a623b3de7ddb86ca30278eea37a82 refs/tags/v2.4
+5553cef2496668aeddc6a93918595afa3aa79c7c refs/tags/v2.4-rc1
+79d6a1a4e2f620214f246e9ae0fdf4e129b91bea refs/tags/v2.4.1
+619f04f89861c58e5a6415a4f83847752928252d refs/tags/v2.5

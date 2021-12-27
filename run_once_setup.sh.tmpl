@@ -1,0 +1,83 @@
+#!/bin/bash
+
+{{ if (eq .chezmoi.os "linux") }}
+
+{{  if (.chezmoi.osRelease.name | lower | contains "ubuntu") }}
+    echo "Ubuntu detected, using apt..."
+    # Install apt packages 
+    echo "Installing packages..."
+    sudo apt-get -y install build-essential curl fd-find fzf git lolcat neofetch ranger ripgrep software-properties-common universal-ctags unzip zsh
+    echo ""
+    # Setup neovim
+    echo "Installing neovim..."
+    if [ ! -f "/bin/nvim" ]; then
+        sudo add-apt-repository -y ppa:neovim-ppa/unstable
+        sudo apt-get update
+    fi
+    sudo apt-get -y install neovim
+    echo ""
+{{  end }}
+
+    # Setup dircolors
+    if [ ! -f "$HOME/dir_colors" ]; then
+        echo "Installing Nord dir_colors..."
+        curl -LO https://github.com/arcticicestudio/nord-dircolors/releases/download/v0.2.0/dir_colors
+    fi
+
+    # Install rust
+    if [ ! -d "$HOME/.cargo" ]; then
+        echo "Installing Rust..."
+        curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
+        rustup update
+        # Add rust language server (rust-analyzer)
+        rustup component add rust-src
+        cargo install rusty-tags cargo-watch
+        curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/bin/rust-analyzer
+        chmod +x ~/bin/rust-analyzer
+    fi
+
+{{  if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
+    # WSL-specific code
+    echo "WSL2, skipping Kitty Terminal"
+{{  else }}
+    # Setup Kitty and font
+    if [ ! -d "$HOME/.local/kitty.app" ]; then
+        # Setup Kitty
+        echo "Non-WSL2, installing Kitty Terminal..."
+        curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+        # Create a symbolic link to add kitty to PATH (assuming ~/.local/bin is in
+        # your PATH)
+        ln -s ~/.local/kitty.app/bin/kitty ~/bin/
+        # Place the kitty.desktop file somewhere it can be found by the OS
+        cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/
+        # Update the path to the kitty icon in the kitty.desktop file
+        sed -i "s|Icon=kitty|Icon=/home/$USER/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g" ~/.local/share/applications/kitty.desktop
+
+        # Setup font
+        echo "Installing iA Writer Nerd Font..."
+        curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/iA-Writer.zip
+        sudo mkdir -p /usr/share/fonts/truetype/iM_Writing/
+        sudo unzip -d /usr/share/fonts/truetype/iM_Writing/ iA-Writer.zip
+        sudo find /usr/share/fonts/truetype/iM_Writing/ -type f ! -name "iM\ Writing\ Mono*Complete.ttf" -delete
+        rm iA-Writer.zip
+        fc-cache -f -v
+    fi
+{{  end }}
+
+# Fix repo from html to ssh
+pushd ~/.local/share/chezmoi/
+GIT_URL=$(git config --get remote.origin.url)
+if [[  "$GIT_URL" != "git@github.com:SoftAnnaLee/dotfiles.git" ]]; then
+    git remote set-url origin git@github.com:SoftAnnaLee/dotfiles.git
+fi 
+popd
+
+#change shell to zsh
+PASSWD=$(cat /etc/passwd | grep $(whoami))
+echo $PASSWD
+if [[ "$PASSWD" != *"zsh"* ]]; then 
+    echo "Changing shell to zsh..."
+    chsh -s $(which zsh)
+fi
+echo ""
+{{ end }}

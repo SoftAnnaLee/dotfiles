@@ -1,0 +1,7 @@
+.local/share/nvim/shada/main.shada
+.local/share/nvim/.netrwhist
+.config/nvim/undodir/
+.config/nvim/plugged/
+.local/share/nvim/lsp_servers/sumneko_lua/extension/server/log/
+.local/share/nvim/telescope_history
+.local/share/nvim/sessions

@@ -1,0 +1,7 @@
+# pack-refs with: peeled fully-peeled sorted 
+47cfda2c6711077625c90902d7722238a8294982 refs/remotes/origin/0.5-compat
+6c5f4b1b49aa2e6f948fb58fb9df82954bebf488 refs/remotes/origin/master
+58fae0196e4deb260734c2e0117f6a7e9261fb25 refs/remotes/origin/refactor-for-language-tree
+ddc29c079f16df6735d07cf71b7376c89edd3918 refs/remotes/origin/revert-1583-mergify
+69819f83f21edbbd951d0b1a9164c7b78c9166a8 refs/remotes/origin/update-lockfile-pr
+6c5f4b1b49aa2e6f948fb58fb9df82954bebf488 refs/remotes/origin/update-readme-pr

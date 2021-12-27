@@ -1,0 +1,6 @@
+94c2de47ab301d476a2baec9ffda07367046bec9		branch 'master' of https://github.com/justinmk/vim-sneak
+2a4bbe31175b6e5ffe1ce7725238d116d549d709	not-for-merge	branch 'fluff' of https://github.com/justinmk/vim-sneak
+db1bb2a544f10eeaf1ebce795dd46606db209943	not-for-merge	branch 'nojump' of https://github.com/justinmk/vim-sneak
+db3d8b23f73853aa0d05145cb5350e0d0151c518	not-for-merge	branch 'regex' of https://github.com/justinmk/vim-sneak
+34ee647c5ab69c7b240feee67bfd2db5c824d449	not-for-merge	branch 'tab_next_page' of https://github.com/justinmk/vim-sneak
+628f9d0e2d88b4b440b6b2e0e74d0f48e86eec55	not-for-merge	branch 'vertical_scope_perf' of https://github.com/justinmk/vim-sneak

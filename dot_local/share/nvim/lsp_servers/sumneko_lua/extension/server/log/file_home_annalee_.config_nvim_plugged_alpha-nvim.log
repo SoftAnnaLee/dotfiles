@@ -1,0 +1,711 @@
+[11:33:19.969][info] [#0:/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:49]: Lua Lsp startup, root: 	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server
+[11:33:19.970][debug][#0:/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:50]: ROOT:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server
+[11:33:19.970][debug][#0:/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:51]: LOGPATH:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/log
+[11:33:19.970][debug][#0:/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:52]: METAPATH:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta
+[11:33:19.971][debug][#0:/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:53]: VERSION:	2.5.4
+[11:33:20.048][info] [#0:script/service/telemetry.lua:21]: Telemetry Token:	6565F24579036BF9
+[11:33:20.059][info] [#0:script/pub/pub.lua:48]: Create brave:	1
+[11:33:20.060][info] [#0:script/pub/pub.lua:48]: Create brave:	2
+[11:33:20.060][info] [#0:script/pub/pub.lua:48]: Create brave:	3
+[11:33:20.061][info] [#0:script/pub/pub.lua:48]: Create brave:	4
+[11:33:20.062][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 1.332 MB
+        # 00 : 1.332 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[11:33:20.137][debug][#0:script/client.lua:344]: Client init	{
+    capabilities = {
+        callHierarchy = {
+            dynamicRegistration = false,
+        },
+        textDocument = {
+            codeAction = {
+                codeActionLiteralSupport = {
+                    codeActionKind = {
+                        valueSet = {
+                            [01] = "",
+                            [02] = "Empty",
+                            [03] = "QuickFix",
+                            [04] = "Refactor",
+                            [05] = "RefactorExtract",
+                            [06] = "RefactorInline",
+                            [07] = "RefactorRewrite",
+                            [08] = "Source",
+                            [09] = "SourceOrganizeImports",
+                            [10] = "quickfix",
+                            [11] = "refactor",
+                            [12] = "refactor.extract",
+                            [13] = "refactor.inline",
+                            [14] = "refactor.rewrite",
+                            [15] = "source",
+                            [16] = "source.organizeImports",
+                        },
+                    },
+                },
+                dataSupport = true,
+                dynamicRegistration = false,
+                resolveSupport = {
+                    properties = {
+                        [1] = "edit",
+                    },
+                },
+            },
+            completion = {
+                completionItem = {
+                    commitCharactersSupport = false,
+                    deprecatedSupport = false,
+                    documentationFormat = {
+                        [1] = "markdown",
+                        [2] = "plaintext",
+                    },
+                    preselectSupport = false,
+                    snippetSupport = false,
+                },
+                completionItemKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                    },
+                },
+                contextSupport = false,
+                dynamicRegistration = false,
+            },
+            declaration = {
+                linkSupport = true,
+            },
+            definition = {
+                linkSupport = true,
+            },
+            documentHighlight = {
+                dynamicRegistration = false,
+            },
+            documentSymbol = {
+                dynamicRegistration = false,
+                hierarchicalDocumentSymbolSupport = true,
+                symbolKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                        [26] = 26,
+                    },
+                },
+            },
+            hover = {
+                contentFormat = {
+                    [1] = "markdown",
+                    [2] = "plaintext",
+                },
+                dynamicRegistration = false,
+            },
+            implementation = {
+                linkSupport = true,
+            },
+            publishDiagnostics = {
+                relatedInformation = true,
+                tagSupport = {
+                    valueSet = {
+                        [1] = 1,
+                        [2] = 2,
+                    },
+                },
+            },
+            references = {
+                dynamicRegistration = false,
+            },
+            rename = {
+                dynamicRegistration = false,
+                prepareSupport = true,
+            },
+            signatureHelp = {
+                dynamicRegistration = false,
+                signatureInformation = {
+                    activeParameterSupport = true,
+                    documentationFormat = {
+                        [1] = "markdown",
+                        [2] = "plaintext",
+                    },
+                    parameterInformation = {
+                        labelOffsetSupport = true,
+                    },
+                },
+            },
+            synchronization = {
+                didSave = true,
+                dynamicRegistration = false,
+                willSave = false,
+                willSaveWaitUntil = false,
+            },
+            typeDefinition = {
+                linkSupport = true,
+            },
+        },
+        window = {
+            showDocument = {
+                support = false,
+            },
+            showMessage = {
+                messageActionItem = {
+                    additionalPropertiesSupport = false,
+                },
+            },
+            workDoneProgress = true,
+        },
+        workspace = {
+            applyEdit = true,
+            configuration = true,
+            symbol = {
+                dynamicRegistration = false,
+                hierarchicalWorkspaceSymbolSupport = true,
+                symbolKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                        [26] = 26,
+                    },
+                },
+            },
+            workspaceEdit = {
+                resourceOperations = {
+                    [1] = "rename",
+                    [2] = "create",
+                    [3] = "delete",
+                },
+            },
+            workspaceFolders = true,
+        },
+    },
+    clientInfo = {
+        name = "Neovim",
+        version = "0.7.0",
+    },
+    initializationOptions = {
+    },
+    processId = 10433,
+    rootPath = "/home/annalee/.config/nvim/plugged/alpha-nvim",
+    rootUri = "file:///home/annalee/.config/nvim/plugged/alpha-nvim",
+    trace = "off",
+    workspaceFolders = {
+        [1] = {
+            name = "/home/annalee/.config/nvim/plugged/alpha-nvim",
+            uri = "file:///home/annalee/.config/nvim/plugged/alpha-nvim",
+        },
+    },
+}
+[11:33:20.137][info] [#0:script/language.lua:135]: VSC language: nil
+[11:33:20.137][info] [#0:script/language.lua:136]: LS  language: en-us
+[11:33:20.138][info] [#0:script/workspace/workspace.lua:34]: Workspace inited: 	file:///home/annalee/.config/nvim/plugged/alpha-nvim
+[11:33:20.138][info] [#0:script/workspace/workspace.lua:43]: Log path: 	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/log/file_home_annalee_.config_nvim_plugged_alpha-nvim.log
+[11:33:20.333][debug][#0:script/proto/proto.lua:157]: Method [initialize] takes [0.203]sec.
+[11:33:20.337][debug][#0:script/provider/provider.lua:24]: load config from client
+[11:33:20.338][debug][#0:script/provider/provider.lua:42]: loaded config dump:	{
+    Lua = {
+        IntelliSense = {
+            traceBeSetted = false,
+            traceFieldInject = false,
+            traceLocalSet = false,
+            traceReturn = false,
+        },
+        color = {
+            mode = "Semantic",
+        },
+        completion = {
+            autoRequire = true,
+            callSnippet = "Disable",
+            displayContext = 0,
+            enable = true,
+            keywordSnippet = "Replace",
+            postfix = "@",
+            requireSeparator = ".",
+            showParams = true,
+            showWord = "Fallback",
+            workspaceWord = true,
+        },
+        diagnostics = {
+            disable = {
+            },
+            enable = true,
+            globals = {
+            },
+            ignoredFiles = "Opened",
+            libraryFiles = "Opened",
+            neededFileStatus = {
+                ["ambiguity-1"] = "Any",
+                ["await-in-sync"] = "None",
+                ["circle-doc-class"] = "Any",
+                ["close-non-object"] = "Any",
+                ["code-after-break"] = "Opened",
+                ["count-down-loop"] = "Any",
+                ["different-requires"] = "Any",
+                ["discard-returns"] = "Opened",
+                ["doc-field-no-class"] = "Any",
+                ["duplicate-doc-class"] = "Any",
+                ["duplicate-doc-field"] = "Any",
+                ["duplicate-doc-param"] = "Any",
+                ["duplicate-index"] = "Any",
+                ["duplicate-set-field"] = "Any",
+                ["empty-block"] = "Opened",
+                ["global-in-nil-env"] = "Any",
+                ["lowercase-global"] = "Any",
+                ["newfield-call"] = "Any",
+                ["newline-call"] = "Any",
+                ["no-implicit-any"] = "None",
+                ["not-yieldable"] = "None",
+                ["redefined-local"] = "Opened",
+                ["redundant-parameter"] = "Opened",
+                ["redundant-return"] = "Opened",
+                ["redundant-value"] = "Opened",
+                ["trailing-space"] = "Opened",
+                ["type-check"] = "None",
+                ["unbalanced-assignments"] = "Any",
+                ["undefined-doc-class"] = "Any",
+                ["undefined-doc-name"] = "Any",
+                ["undefined-doc-param"] = "Any",
+                ["undefined-env-child"] = "Any",
+                ["undefined-field"] = "Opened",
+                ["undefined-global"] = "Any",
+                ["unknown-diag-code"] = "Any",
+                ["unused-function"] = "Opened",
+                ["unused-label"] = "Opened",
+                ["unused-local"] = "Opened",
+                ["unused-vararg"] = "Opened",
+                deprecated = "Opened",
+            },
+            severity = {
+                ["ambiguity-1"] = "Warning",
+                ["await-in-sync"] = "Warning",
+                ["circle-doc-class"] = "Warning",
+                ["close-non-object"] = "Warning",
+                ["code-after-break"] = "Hint",
+                ["count-down-loop"] = "Warning",
+                ["different-requires"] = "Warning",
+                ["discard-returns"] = "Warning",
+                ["doc-field-no-class"] = "Warning",
+                ["duplicate-doc-class"] = "Warning",
+                ["duplicate-doc-field"] = "Warning",
+                ["duplicate-doc-param"] = "Warning",
+                ["duplicate-index"] = "Warning",
+                ["duplicate-set-field"] = "Warning",
+                ["empty-block"] = "Hint",
+                ["global-in-nil-env"] = "Warning",
+                ["lowercase-global"] = "Information",
+                ["newfield-call"] = "Warning",
+                ["newline-call"] = "Information",
+                ["no-implicit-any"] = "Information",
+                ["not-yieldable"] = "Warning",
+                ["redefined-local"] = "Hint",
+                ["redundant-parameter"] = "Warning",
+                ["redundant-return"] = "Warning",
+                ["redundant-value"] = "Warning",
+                ["trailing-space"] = "Hint",
+                ["type-check"] = "Warning",
+                ["unbalanced-assignments"] = "Warning",
+                ["undefined-doc-class"] = "Warning",
+                ["undefined-doc-name"] = "Warning",
+                ["undefined-doc-param"] = "Warning",
+                ["undefined-env-child"] = "Information",
+                ["undefined-field"] = "Warning",
+                ["undefined-global"] = "Warning",
+                ["unknown-diag-code"] = "Waiting",
+                ["unused-function"] = "Hint",
+                ["unused-label"] = "Hint",
+                ["unused-local"] = "Hint",
+                ["unused-vararg"] = "Hint",
+                deprecated = "Warning",
+            },
+            workspaceDelay = 0,
+            workspaceRate = 100,
+        },
+        hint = {
+            await = true,
+            enable = false,
+            paramName = "All",
+            paramType = true,
+            setType = false,
+        },
+        hover = {
+            enable = true,
+            enumsLimit = 5,
+            previewFields = 20,
+            viewNumber = true,
+            viewString = true,
+            viewStringMax = 1000,
+        },
+        runtime = {
+            builtin = {
+            },
+            fileEncoding = "utf8",
+            meta = "${version} ${language} ${encoding}",
+            nonstandardSymbol = {
+            },
+            path = {
+                [1] = "?.lua",
+                [2] = "?/init.lua",
+            },
+            pathStrict = false,
+            plugin = "",
+            special = {
+            },
+            unicodeName = false,
+            version = "Lua 5.4",
+        },
+        signatureHelp = {
+            enable = true,
+        },
+        telemetry = {
+            enable = false,
+        },
+        window = {
+            progressBar = true,
+            statusBar = true,
+        },
+        workspace = {
+            checkThirdParty = true,
+            ignoreDir = {
+            },
+            ignoreSubmodules = true,
+            library = {
+            },
+            maxPreload = 1000,
+            preloadFileSize = 100,
+            useGitIgnore = true,
+            userThirdParty = {
+            },
+        },
+    },
+    editor = {
+        acceptSuggestionOnEnter = "on",
+        semanticHighlighting = {
+            enabled = {
+            },
+        },
+    },
+    files = {
+        associations = {
+        },
+        exclude = {
+        },
+    },
+}
+[11:33:20.354][info] [#0:script/plugin.lua:88]: plugin path:	nil
+[11:33:20.355][debug][#0:script/provider/provider.lua:24]: load config from client
+[11:33:20.357][debug][#0:script/provider/provider.lua:42]: loaded config dump:	{
+    Lua = {
+        IntelliSense = {
+            traceBeSetted = false,
+            traceFieldInject = false,
+            traceLocalSet = false,
+            traceReturn = false,
+        },
+        color = {
+            mode = "Semantic",
+        },
+        completion = {
+            autoRequire = true,
+            callSnippet = "Disable",
+            displayContext = 0,
+            enable = true,
+            keywordSnippet = "Replace",
+            postfix = "@",
+            requireSeparator = ".",
+            showParams = true,
+            showWord = "Fallback",
+            workspaceWord = true,
+        },
+        diagnostics = {
+            disable = {
+            },
+            enable = true,
+            globals = {
+            },
+            ignoredFiles = "Opened",
+            libraryFiles = "Opened",
+            neededFileStatus = {
+                ["ambiguity-1"] = "Any",
+                ["await-in-sync"] = "None",
+                ["circle-doc-class"] = "Any",
+                ["close-non-object"] = "Any",
+                ["code-after-break"] = "Opened",
+                ["count-down-loop"] = "Any",
+                ["different-requires"] = "Any",
+                ["discard-returns"] = "Opened",
+                ["doc-field-no-class"] = "Any",
+                ["duplicate-doc-class"] = "Any",
+                ["duplicate-doc-field"] = "Any",
+                ["duplicate-doc-param"] = "Any",
+                ["duplicate-index"] = "Any",
+                ["duplicate-set-field"] = "Any",
+                ["empty-block"] = "Opened",
+                ["global-in-nil-env"] = "Any",
+                ["lowercase-global"] = "Any",
+                ["newfield-call"] = "Any",
+                ["newline-call"] = "Any",
+                ["no-implicit-any"] = "None",
+                ["not-yieldable"] = "None",
+                ["redefined-local"] = "Opened",
+                ["redundant-parameter"] = "Opened",
+                ["redundant-return"] = "Opened",
+                ["redundant-value"] = "Opened",
+                ["trailing-space"] = "Opened",
+                ["type-check"] = "None",
+                ["unbalanced-assignments"] = "Any",
+                ["undefined-doc-class"] = "Any",
+                ["undefined-doc-name"] = "Any",
+                ["undefined-doc-param"] = "Any",
+                ["undefined-env-child"] = "Any",
+                ["undefined-field"] = "Opened",
+                ["undefined-global"] = "Any",
+                ["unknown-diag-code"] = "Any",
+                ["unused-function"] = "Opened",
+                ["unused-label"] = "Opened",
+                ["unused-local"] = "Opened",
+                ["unused-vararg"] = "Opened",
+                deprecated = "Opened",
+            },
+            severity = {
+                ["ambiguity-1"] = "Warning",
+                ["await-in-sync"] = "Warning",
+                ["circle-doc-class"] = "Warning",
+                ["close-non-object"] = "Warning",
+                ["code-after-break"] = "Hint",
+                ["count-down-loop"] = "Warning",
+                ["different-requires"] = "Warning",
+                ["discard-returns"] = "Warning",
+                ["doc-field-no-class"] = "Warning",
+                ["duplicate-doc-class"] = "Warning",
+                ["duplicate-doc-field"] = "Warning",
+                ["duplicate-doc-param"] = "Warning",
+                ["duplicate-index"] = "Warning",
+                ["duplicate-set-field"] = "Warning",
+                ["empty-block"] = "Hint",
+                ["global-in-nil-env"] = "Warning",
+                ["lowercase-global"] = "Information",
+                ["newfield-call"] = "Warning",
+                ["newline-call"] = "Information",
+                ["no-implicit-any"] = "Information",
+                ["not-yieldable"] = "Warning",
+                ["redefined-local"] = "Hint",
+                ["redundant-parameter"] = "Warning",
+                ["redundant-return"] = "Warning",
+                ["redundant-value"] = "Warning",
+                ["trailing-space"] = "Hint",
+                ["type-check"] = "Warning",
+                ["unbalanced-assignments"] = "Warning",
+                ["undefined-doc-class"] = "Warning",
+                ["undefined-doc-name"] = "Warning",
+                ["undefined-doc-param"] = "Warning",
+                ["undefined-env-child"] = "Information",
+                ["undefined-field"] = "Warning",
+                ["undefined-global"] = "Warning",
+                ["unknown-diag-code"] = "Waiting",
+                ["unused-function"] = "Hint",
+                ["unused-label"] = "Hint",
+                ["unused-local"] = "Hint",
+                ["unused-vararg"] = "Hint",
+                deprecated = "Warning",
+            },
+            workspaceDelay = 0,
+            workspaceRate = 100,
+        },
+        hint = {
+            await = true,
+            enable = false,
+            paramName = "All",
+            paramType = true,
+            setType = false,
+        },
+        hover = {
+            enable = true,
+            enumsLimit = 5,
+            previewFields = 20,
+            viewNumber = true,
+            viewString = true,
+            viewStringMax = 1000,
+        },
+        runtime = {
+            builtin = {
+            },
+            fileEncoding = "utf8",
+            meta = "${version} ${language} ${encoding}",
+            nonstandardSymbol = {
+            },
+            path = {
+                [1] = "?.lua",
+                [2] = "?/init.lua",
+            },
+            pathStrict = false,
+            plugin = "",
+            special = {
+            },
+            unicodeName = false,
+            version = "Lua 5.4",
+        },
+        signatureHelp = {
+            enable = true,
+        },
+        telemetry = {
+            enable = false,
+        },
+        window = {
+            progressBar = true,
+            statusBar = true,
+        },
+        workspace = {
+            checkThirdParty = true,
+            ignoreDir = {
+            },
+            ignoreSubmodules = true,
+            library = {
+            },
+            maxPreload = 1000,
+            preloadFileSize = 100,
+            useGitIgnore = true,
+            userThirdParty = {
+            },
+        },
+    },
+    editor = {
+        acceptSuggestionOnEnter = "on",
+        semanticHighlighting = {
+            enabled = {
+            },
+        },
+    },
+    files = {
+        associations = {
+        },
+        exclude = {
+        },
+    },
+}
+[11:33:21.140][info] [#0:script/workspace/workspace.lua:335]: Preload start.
+[11:33:21.141][info] [#0:script/workspace/workspace.lua:100]: Ignore by .gitignore:	doc/tags
+[11:33:21.144][debug][#0:script/workspace/workspace.lua:168]: getLibraryMatchers	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.145][info] [#0:script/workspace/workspace.lua:340]: Scan files at:	/home/annalee/.config/nvim/plugged/alpha-nvim
+[11:33:21.203][info] [#0:script/workspace/workspace.lua:345]: Scan library at:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.205][info] [#0:script/workspace/workspace.lua:369]: Found 17 files.
+[11:33:21.205][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 4.299 KB
+[11:33:21.205][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.211][info] [#0:script/workspace/workspace.lua:372]: Loaded 1/17 files
+[11:33:21.211][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 13.954 KB
+[11:33:21.211][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.220][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.216 KB
+[11:33:21.220][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.221][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.573 KB
+[11:33:21.221][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.224][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.516 KB
+[11:33:21.224][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.231][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.375 KB
+[11:33:21.231][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.237][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.632 KB
+[11:33:21.237][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.247][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.937 KB
+[11:33:21.247][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.249][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.207 KB
+[11:33:21.249][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.255][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 2.767 KB
+[11:33:21.255][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.258][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.352 KB
+[11:33:21.258][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/annalee/.local/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua 5.4 en-us utf8
+[11:33:21.262][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.config/nvim/plugged/alpha-nvim/debug/min-alpha-dashboard.lua , size = 0.123 KB
+[11:33:21.263][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.config/nvim/plugged/alpha-nvim/debug/min-alpha-startify.lua , size = 0.175 KB
+[11:33:21.263][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.config/nvim/plugged/alpha-nvim/lua/alpha/fortune.lua , size = 25.353 KB
+[11:33:21.272][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.config/nvim/plugged/alpha-nvim/lua/alpha/themes/dashboard.lua , size = 2.388 KB
+[11:33:21.277][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.config/nvim/plugged/alpha-nvim/lua/alpha/themes/startify.lua , size = 6.732 KB
+[11:33:21.283][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/annalee/.config/nvim/plugged/alpha-nvim/lua/alpha.lua , size = 17.446 KB
+[11:33:22.140][info] [#0:script/workspace/workspace.lua:372]: Loaded 17/17 files
+[11:33:22.140][info] [#0:script/workspace/workspace.lua:381]: Preload finish.
+[11:33:23.185][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/annalee/.config/nvim/plugged/alpha-nvim/debug/min-alpha-dashboard.lua	3
+[11:33:23.187][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/annalee/.config/nvim/plugged/alpha-nvim/debug/min-alpha-startify.lua	4
+[11:33:23.193][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/annalee/.config/nvim/plugged/alpha-nvim/lua/alpha.lua	45
+[11:33:23.196][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/annalee/.config/nvim/plugged/alpha-nvim/lua/alpha/fortune.lua	1
+[11:33:23.211][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/annalee/.config/nvim/plugged/alpha-nvim/lua/alpha/themes/dashboard.lua	3
+[11:33:23.215][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/annalee/.config/nvim/plugged/alpha-nvim/lua/alpha/themes/startify.lua	11
+[11:33:23.215][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.046875
+[11:33:40.836][info] [#0:script/provider/provider.lua:119]: Server shutdown.
+[11:33:40.837][info] [#0:script/provider/provider.lua:112]: Server exited.

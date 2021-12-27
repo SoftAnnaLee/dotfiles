@@ -1,0 +1,5 @@
+b8662b076175e75e6497c59f3e2799b879d7b954		branch 'main' of https://github.com/nvim-telescope/telescope-fzf-native.nvim
+1a6ac67cbfa7d966241ca53ad83a9a629c21dd3e	not-for-merge	branch 'cli' of https://github.com/nvim-telescope/telescope-fzf-native.nvim
+7381af454e517a6c5aca88047d4c7faa5b84fefc	not-for-merge	branch 'downloader' of https://github.com/nvim-telescope/telescope-fzf-native.nvim
+8a0f3c0745d62933d23d0ebd46b890ed412d668f	not-for-merge	branch 'feat/uf8_take2' of https://github.com/nvim-telescope/telescope-fzf-native.nvim
+24d6d8c3c882bee0476ca169595cd74a52f4f150	not-for-merge	branch 'utf8' of https://github.com/nvim-telescope/telescope-fzf-native.nvim

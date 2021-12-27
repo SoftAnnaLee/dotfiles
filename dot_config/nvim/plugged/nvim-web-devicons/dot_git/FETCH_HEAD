@@ -1,0 +1,6 @@
+ac71ca88b1136e1ecb2aefef4948130f31aa40d1		branch 'master' of https://github.com/kyazdani42/nvim-web-devicons
+b517ac4c77ba2042343881f9af895dea5a2ccaae	not-for-merge	branch 'add-setup-check' of https://github.com/kyazdani42/nvim-web-devicons
+c910dd7c1ff004e6352caff2abbedfcf8ea3bcdb	not-for-merge	branch 'add-user-config' of https://github.com/kyazdani42/nvim-web-devicons
+e5ec732956c0177a5472a78cf5ca691b974fedc9	not-for-merge	branch 'enable-modifying-default' of https://github.com/kyazdani42/nvim-web-devicons
+10a0a548c3c7ffdb37707ec5d3dca55040be5aae	not-for-merge	branch 'fix/neovim-0.4' of https://github.com/kyazdani42/nvim-web-devicons
+df86424f6e4bb3dbd2c96bae08e989841ca15dfc	not-for-merge	branch 'refacto/disable-default-icon-and-provide-default-icon' of https://github.com/kyazdani42/nvim-web-devicons

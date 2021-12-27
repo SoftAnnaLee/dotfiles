@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/mnt/c/Users/SamanthaC/rust/markdown_puppy/src'
+let g:netrw_dirhist_7='/home/sammi/advent_of_code_2021'
+let g:netrw_dirhist_6='/home/sammi/advent_of_code_2021/day9'
+let g:netrw_dirhist_5='/home/sammi/.config/kitty'
+let g:netrw_dirhist_4='/mnt/c/Users/SamanthaC/Advent_Of_Code_2021/day10/src'
+let g:netrw_dirhist_3='/mnt/c/Users/SamanthaC/Advent_Of_Code_2021/day10'
+let g:netrw_dirhist_2='/mnt/c/Users/SamanthaC/Advent_Of_Code_2021/day10/src'
+let g:netrw_dirhist_1='/mnt/c/Users/SamanthaC/Advent_Of_Code_2021/day10'
+let g:netrw_dirhist_0='/home/sammi/advent_of_code_2021/day9/src'
+let g:netrw_dirhist_9='/home/samanthac/.config'

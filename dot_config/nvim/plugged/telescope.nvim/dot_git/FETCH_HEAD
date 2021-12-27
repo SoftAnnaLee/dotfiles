@@ -1,0 +1,24 @@
+9aaaa0c5f3eb665b51bbcafda084de4b0952fef0		branch 'master' of https://github.com/nvim-telescope/telescope.nvim
+e0a9a68de0e3bd773e812c98f84635c0902e23e7	not-for-merge	branch 'add-fzf-builtin' of https://github.com/nvim-telescope/telescope.nvim
+09d7bbc52ed4777b658578a7d78a72900bd05948	not-for-merge	branch 'apply_mappings_fixup' of https://github.com/nvim-telescope/telescope.nvim
+279f1dd3e1945ca982e93b37443274300f1bb788	not-for-merge	branch 'async_3' of https://github.com/nvim-telescope/telescope.nvim
+053c789740323b679818fe3c9c8ba070f1928558	not-for-merge	branch 'center-theme' of https://github.com/nvim-telescope/telescope.nvim
+1b7d1c40eb28801de883e20b237267e0709e7cce	not-for-merge	branch 'command-complete' of https://github.com/nvim-telescope/telescope.nvim
+575023a95397394a0a219969fc974ec0dcfd9ae5	not-for-merge	branch 'extensions_improvements' of https://github.com/nvim-telescope/telescope.nvim
+558a744f2dc497feb269966523348037e6820fe3	not-for-merge	branch 'feat/lsp/references_exclude_declaration_by_default' of https://github.com/nvim-telescope/telescope.nvim
+75215b21faed36df6459159988bb754feaec5b6f	not-for-merge	branch 'filter_query_text' of https://github.com/nvim-telescope/telescope.nvim
+b349751d313b8077e19bebd694170312e205ead8	not-for-merge	branch 'fix_ci' of https://github.com/nvim-telescope/telescope.nvim
+44f2af7e58f77aefa791bf8c46034dcbdba1153a	not-for-merge	branch 'fps' of https://github.com/nvim-telescope/telescope.nvim
+9ea14fab1655b7dadbc1207fa0f66c15fe85e60c	not-for-merge	branch 'improved_debug' of https://github.com/nvim-telescope/telescope.nvim
+5b7d4d1d64a8e3c69e8c3126503b3f2d645970ff	not-for-merge	branch 'layout_configuration' of https://github.com/nvim-telescope/telescope.nvim
+50afbb706d2863647218f5ebe669677f57c8071f	not-for-merge	branch 'list' of https://github.com/nvim-telescope/telescope.nvim
+2bcdc4acee4ba4a8a3573cc98ae3cfef831c5c10	not-for-merge	branch 'lualint' of https://github.com/nvim-telescope/telescope.nvim
+6eb4c27009b603f6859d4ae88c4f4af7b490114c	not-for-merge	branch 'multi_actions' of https://github.com/nvim-telescope/telescope.nvim
+d1ae4e838305f2c2422e53bdb4bc3d631df1016b	not-for-merge	branch 'open-qflist-on-separate-action' of https://github.com/nvim-telescope/telescope.nvim
+dd6fbfde5dc8ec8b81a9974d8ed9e8916a9055eb	not-for-merge	branch 'options_menu' of https://github.com/nvim-telescope/telescope.nvim
+70e3b76ed78d1862b3c0a61d2751633c2e1f31c0	not-for-merge	branch 'planets-viewer' of https://github.com/nvim-telescope/telescope.nvim
+99e9730868f25c57c3178336e4085736a7350e9d	not-for-merge	branch 'prompt_prefix' of https://github.com/nvim-telescope/telescope.nvim
+5318eb5ce1ea25f42b5c417391440cd4ae7ca16f	not-for-merge	branch 'prompt_refactor' of https://github.com/nvim-telescope/telescope.nvim
+86822e23811ddf2d0df5999d683bbdb52f5696fc	not-for-merge	branch 'split_view' of https://github.com/nvim-telescope/telescope.nvim
+e29ccb9d509aae0b15487449f0d8d7c7a4abeb26	not-for-merge	branch 'thread_sorters' of https://github.com/nvim-telescope/telescope.nvim
+77c1ff3ca4aa6538019e666cf78a86e4deceacf1	not-for-merge	branch 'win_picker' of https://github.com/nvim-telescope/telescope.nvim

@@ -1,0 +1,6 @@
+a672e11c816d4a91ef01253ba1a2567d20e08e55		branch 'master' of https://github.com/nvim-lua/plenary.nvim
+816f44b182e09898acb272d445cd5126c8e74863	not-for-merge	branch 'async_jobs_v2' of https://github.com/nvim-lua/plenary.nvim
+13dcf3b80565c9520322acdda5ec93c0b7fd6179	not-for-merge	branch 'profiler' of https://github.com/nvim-lua/plenary.nvim
+cceedb3bbf19deb59964543d0901b1b7053676c4	not-for-merge	branch 'standardizing_path' of https://github.com/nvim-lua/plenary.nvim
+70961aaed5b2d699d1149c589984081781356981	not-for-merge	branch 'tj/job_futures' of https://github.com/nvim-lua/plenary.nvim
+05d24c86461565589d8bc6d522f487d24bb72294	not-for-merge	branch 'work_job' of https://github.com/nvim-lua/plenary.nvim

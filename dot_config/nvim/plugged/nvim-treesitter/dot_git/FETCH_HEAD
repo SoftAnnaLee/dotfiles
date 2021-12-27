@@ -1,0 +1,6 @@
+6c5f4b1b49aa2e6f948fb58fb9df82954bebf488		branch 'master' of https://github.com/nvim-treesitter/nvim-treesitter
+47cfda2c6711077625c90902d7722238a8294982	not-for-merge	branch '0.5-compat' of https://github.com/nvim-treesitter/nvim-treesitter
+58fae0196e4deb260734c2e0117f6a7e9261fb25	not-for-merge	branch 'refactor-for-language-tree' of https://github.com/nvim-treesitter/nvim-treesitter
+ddc29c079f16df6735d07cf71b7376c89edd3918	not-for-merge	branch 'revert-1583-mergify' of https://github.com/nvim-treesitter/nvim-treesitter
+69819f83f21edbbd951d0b1a9164c7b78c9166a8	not-for-merge	branch 'update-lockfile-pr' of https://github.com/nvim-treesitter/nvim-treesitter
+6c5f4b1b49aa2e6f948fb58fb9df82954bebf488	not-for-merge	branch 'update-readme-pr' of https://github.com/nvim-treesitter/nvim-treesitter

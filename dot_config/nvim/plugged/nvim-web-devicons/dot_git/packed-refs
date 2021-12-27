@@ -1,0 +1,7 @@
+# pack-refs with: peeled fully-peeled sorted 
+b517ac4c77ba2042343881f9af895dea5a2ccaae refs/remotes/origin/add-setup-check
+c910dd7c1ff004e6352caff2abbedfcf8ea3bcdb refs/remotes/origin/add-user-config
+e5ec732956c0177a5472a78cf5ca691b974fedc9 refs/remotes/origin/enable-modifying-default
+10a0a548c3c7ffdb37707ec5d3dca55040be5aae refs/remotes/origin/fix/neovim-0.4
+ac71ca88b1136e1ecb2aefef4948130f31aa40d1 refs/remotes/origin/master
+df86424f6e4bb3dbd2c96bae08e989841ca15dfc refs/remotes/origin/refacto/disable-default-icon-and-provide-default-icon

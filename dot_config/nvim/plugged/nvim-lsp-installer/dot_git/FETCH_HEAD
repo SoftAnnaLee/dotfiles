@@ -1,0 +1,7 @@
+81125c9d4c076f55dab58c0ec2e282412767d134		branch 'main' of https://github.com/williamboman/nvim-lsp-installer
+a8a9b1f24c94fb9af2737bbb130b9b287f461b30	not-for-merge	branch 'add-golangci_lint_ls' of https://github.com/williamboman/nvim-lsp-installer
+b2fa21a6d6d7fa6d4d455fd4c1951478a02e73df	not-for-merge	branch 'add-grammarly' of https://github.com/williamboman/nvim-lsp-installer
+301d8a6e63acc16342862a756667d71518e9cb73	not-for-merge	branch 'append-path-for-cmd_env' of https://github.com/williamboman/nvim-lsp-installer
+a0155701e87009ca96c044abe6b241bb2b884fed	not-for-merge	branch 'fix-ccls-mac' of https://github.com/williamboman/nvim-lsp-installer
+4f389abfdd8168c27d3d72393623fc58a8fd094d	not-for-merge	branch 'omnisharp-arch' of https://github.com/williamboman/nvim-lsp-installer
+d306df7e706d02a2000ee49e18dc6cc8ce724dd6	not-for-merge	branch 'outdated-servers' of https://github.com/williamboman/nvim-lsp-installer

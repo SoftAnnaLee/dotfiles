@@ -1,0 +1,16 @@
+# pack-refs with: peeled fully-peeled sorted 
+259fd07cc50ba7e8f92c18b682669b6e4751df76 refs/remotes/origin/bugfix
+13c227efb90977350f7595755d9801be8d165a4b refs/remotes/origin/dev
+673406a9465236004148c4c23a58fb0c624cbdd6 refs/remotes/origin/dev-doc
+65e1cbb86ebf3b03d4f9920b20b286d6583c1054 refs/remotes/origin/dev-left
+2295213bf87eef21377efd8211267ba9d41abb61 refs/remotes/origin/dev-lua-main
+ce664c953456ce9a903c3f6c94a20b08205890ec refs/remotes/origin/dev-mode-ataraxis
+a5d81c28e3da39a4e36113bf1451635c8310dbe7 refs/remotes/origin/dev-mode-ataraxis-issue-10
+89226c6111ef624d2d3cf654ea8669c5e294ba2a refs/remotes/origin/dev-mode-focus
+f52479ddd472ac699f9b375c3501859164bbbfe1 refs/remotes/origin/dev-mode-minimalist
+10ef218f7a0e3c2dff19146af1c06e4af68261d1 refs/remotes/origin/dev-refactor
+fddd41061aad35a542571fa1284746db2110830f refs/remotes/origin/dev-statusline
+8873fae5defd79eb1f436f7cd91f066c52b67744 refs/remotes/origin/dev-top
+fca14c266b055f5b7a80b38cf3a12d1a4208bbbd refs/remotes/origin/dev-user-opts
+508b977d71650da5c9243698614a9a1416f116d4 refs/remotes/origin/main
+fbe051aa00d4e92505f3eac86c4c03f8ad4e8358 refs/remotes/origin/test-require

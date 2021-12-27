@@ -1,0 +1,6 @@
+593e28964cb3f071031cf849d562c982582ddaa0		branch 'master' of https://github.com/nvim-lualine/lualine.nvim
+9d76f06d54411ee524da7d0a8bf799d608d3b984	not-for-merge	branch 'chore/update-workflows' of https://github.com/nvim-lualine/lualine.nvim
+55a26ce849c88abf1c2cddc3343f216c47bcff39	not-for-merge	branch 'enhance/cache_components' of https://github.com/nvim-lualine/lualine.nvim
+ce7d24c0b78e8ae4f96154c700aefb0702684608	not-for-merge	branch 'feat/add_toggle' of https://github.com/nvim-lualine/lualine.nvim
+9b16afa2b41537fc73a8391595df2d049e559c2a	not-for-merge	branch 'feat/native_section_sep' of https://github.com/nvim-lualine/lualine.nvim
+2469ce0268bc919128efb74337e6a8743224e316	not-for-merge	branch 'web-docs' of https://github.com/nvim-lualine/lualine.nvim
