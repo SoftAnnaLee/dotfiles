@@ -3,8 +3,8 @@ local if_nil = vim.F.if_nil
 
 local function dash_button(sc, txt, keybind, keybind_opts)
     local b = dashboard.button(sc, txt, keybind, keybind_opts)
-    b.opts.hl = {{"CursorLineNr", 0, 99}}
-    b.opts.hl_shortcut = {{ "MoreMsg", 0, 99}}
+    b.opts.hl = {{"StatusLineNC", 0, 99}}
+    b.opts.hl_shortcut = {{ "StatusLine", 0, 99}}
     return b
 end
 
@@ -34,7 +34,7 @@ local function footer()
 end
 
 dashboard.section.header.val = header()
-dashboard.section.header.opts.hl = "Todo"
+dashboard.section.header.opts.hl = "Boolean"
 
 dashboard.section.buttons.val = {
     dash_button("SPC f n", "  New file", ":ene <BAR> startinsert <CR>"),
@@ -47,6 +47,6 @@ dashboard.section.buttons.val = {
 }
 
 dashboard.section.footer.val = footer()
-dashboard.section.footer.opts.hl = "Constant"
+dashboard.section.footer.opts.hl = "LineNr"
 
 require"alpha".setup(dashboard.opts)

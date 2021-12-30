@@ -62,6 +62,7 @@ call plug#begin()
                                                      "Also includes nvim-web-devicons
     source ~/.config/nvim/plugins/lualine.vim        "Lightweight statusbar
     source ~/.config/nvim/plugins/nord.vim           "Nord theme for vim
+    " source ~/.config/nvim/plugins/zenbones.vim       "configurable theme for vim
  """ COMMANDS
     source ~/.config/nvim/plugins/commentary.vim     "Language agnostic commenting
     source ~/.config/nvim/plugins/fugitive.vim       "Git Wrapper
@@ -137,7 +138,6 @@ doautocmd User PlugLoaded
     set smartindent            "Automatically indents, when contextually appropriate
     set splitbelow             "Place split below the current window
     set splitright             "Place split right of the current window
-    set termguicolors
     set updatetime=300         "Milliseconds of idling before swap is written
     set virtualedit=block      "Allow v-block to select outside text constraints
     set wildmode=longest:full,full

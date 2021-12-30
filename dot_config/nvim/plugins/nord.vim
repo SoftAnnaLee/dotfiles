@@ -1,5 +1,20 @@
 " Plug 'arcticicestudio/nord-vim'
 Plug 'shaunsingh/nord.nvim'
+"Plugin for light mode
+Plug 'preservim/vim-colors-pencil'
+
+func! Lightmode()
+    set background=light
+    colorscheme pencil
+    lua require("lualine").setup{options = { theme = "ayu_light" }}
+endfu
+com! Lightmode call Lightmode()
+func! Darkmode()
+    lua require("lualine").setup{options = { theme = "nord" }}
+    colorscheme nord
+    set background=dark
+endfu
+com! Darkmode call Darkmode()
 
 " Make sidebars and popup menus like nvim-tree and telescope have a different
 " background

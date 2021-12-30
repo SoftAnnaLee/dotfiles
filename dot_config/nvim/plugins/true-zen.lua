@@ -11,8 +11,7 @@ true_zen.setup({
         },
         top = {
             showtabline = 0,
-        },
-        left = {
+        }, left = {
             number = false,
             relativenumber = false,
             signcolumn = "no",
@@ -69,17 +68,37 @@ true_zen.setup({
     }
 })
 
+-- changes the kitty font size
+-- it's a bit glitchy, but it works
+local function kitty(enabled)
+  if not vim.fn.executable("kitty") then
+    return
+  end
+  local cmd = "kitty @ --to %s set-font-size %s"
+  local socket = vim.fn.expand("$KITTY_LISTEN_ON")
+  if enabled then
+    vim.fn.system(cmd:format(socket, "+4"))
+  else
+    vim.fn.system(cmd:format(socket, "0"))
+  end
+  vim.cmd([[redraw]])
+end
+
 true_zen.before_mode_atraxis_on = function ()
-    vim.api.nvim_command('NumbersDisable')
+    -- vim.api.nvim_command('NumbersDisable')
+    kitty('true')
 end
 true_zen.after_mode_ataraxis_on = function ()
+    vim.api.nvim_command('set nocursorline')
     vim.api.nvim_command('WP')
 end
 true_zen.before_mode_atraxis_off = function ()
     vim.api.nvim_command('NWP')
+    vim.api.nvim_command('set cursorline')
 end
 true_zen.after_mode_atraxis_off = function ()
-    vim.api.nvim_command('NumbersEnable')
+    -- vim.api.nvim_command('NumbersEnable')
+    kitty('false')
 end
 
 true_zen.before_mode_minimalist_on = function ()
@@ -96,10 +115,10 @@ require("twilight").setup {
   dimming = {
     alpha = 0.25, -- amount of dimming
     -- we try to get the foreground from the highlight groups or fallback color
-    color = { "Normal", "#ffffff" },
+    -- color = { "Normal", "#ffffff" },
     inactive = false, -- when true, other windows will be fully dimmed (unless they contain the same buffer)
   },
-  context = 10, -- amount of lines we will try to show around the current line
+  context = 0, -- amount of lines we will try to show around the current line
   treesitter = true, -- use treesitter when available for the filetype
   -- treesitter is used to automatically expand the visible text,
   -- but you can further control the types of nodes that should always be fully expanded
