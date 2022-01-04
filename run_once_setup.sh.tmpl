@@ -6,6 +6,7 @@
     echo "Ubuntu detected, using apt..."
     # Install apt packages 
     echo "Installing packages..."
+    sudo apt update && sudo apt upgrade
     sudo apt-get -y install build-essential curl fd-find fzf git lolcat neofetch ranger ripgrep software-properties-common universal-ctags unzip zsh
     echo ""
     # Setup neovim
