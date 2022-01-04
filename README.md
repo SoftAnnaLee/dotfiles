@@ -56,6 +56,7 @@ You can download chezmoi and update to this repo by running these command in a t
 
 bitwarden-cli is a prerequisite so that needs to be installed first;
 ```
+sudo apt install -y unzip
 wget --no-check-certificate https://github.com/bitwarden/cli/releases/download/v1.20.0/bw-linux-1.20.0.zip
 unzip bw-linux-1.20.0.zip -d $HOME/bin/
 chmod +x $HOME/bin/bw
