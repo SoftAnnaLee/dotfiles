@@ -80,6 +80,7 @@ call plug#begin()
     source ~/.config/nvim/plugins/nvim-lsp.vim       "Collection of common LSP client config
     source ~/.config/nvim/plugins/rust.vim           "Rust integration and commands
     source ~/.config/nvim/plugins/treesitter.vim     "Syntax tree highlighting
+    source ~/.config/nvim/plugins/grammarous.vim     "Grammar checker using LanguageTool
  """ TELESCOPE
     source ~/.config/nvim/plugins/telescope.vim      "Extendable fuzzy finder
  """ MISC.
@@ -163,8 +164,8 @@ doautocmd User PlugLoaded
 """║                                  KEYBINDS                                 ║
     "Custom commands and keybindings                                    #COMMANDS
 
-    " Use ,<space> to remove search highlighting
-    nnoremap <leader><space> :nohlsearch<CR>
+    " Use ,<space> to remove search highlighting and text in command bar
+    nnoremap <silent><leader><space> :nohlsearch <bar> echon ''<CR>
     " Use ,c to show a colored line on the 80th column
     nnoremap <leader>cc :<C-U>execute "set colorcolumn=".(&colorcolumn == "" ? "80" : "")."<bar>hi Colorcolumn ctermbg=darkgrey"<CR>
     " Use <space> to fold and unfold text
