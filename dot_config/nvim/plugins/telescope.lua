@@ -96,6 +96,10 @@ require('telescope').setup{
             ctags_ft_opt.lua = '--lua-kinds=fk'
             ctags_ft_opt.rust = "--rust-kinds=fPM"
         end
+    },
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown {
+      }
     }
   }
 }
@@ -103,9 +107,10 @@ require('telescope').setup{
 -- To get fzf loaded and working with telescope, you need to call
 -- load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')
-require('telescope').load_extension('sessions')
 require('telescope').load_extension('ctags_outline')
 require('telescope').load_extension('projects')
+require("telescope").load_extension("ui-select")
+
 
 local Path = require('plenary.path')
 require('session_manager').setup({

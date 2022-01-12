@@ -41,7 +41,7 @@ dashboard.section.buttons.val = {
     dash_button("SPC f o", "  Recently opened files", ":Telescope oldfiles<CR>"),
     dash_button("SPC f f", "  Find file", ":Telescope find_files<CR>"),
     dash_button("SPC f g", "  Find word", ":Telescope live_grep<CR>"),
-    dash_button("SPC f s", "  Open session", ":Telescope sessions<CR>"),
+    dash_button("SPC f s", "  Open session", ":SessionManager load_session<CR>"),
     dash_button("SPC w w", "  Vimwiki", ":VimwikiIndex<CR>"),
     dash_button("SPC u d", "  Update plugins", ":PlugInstall<CR>"),
     dash_button("SPC q  ", "  Quit", "<Cmd>qa<CR>")
