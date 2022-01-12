@@ -78,7 +78,7 @@ PASSWD=$(cat /etc/passwd | grep $(whoami))
 echo $PASSWD
 if [[ "$PASSWD" != *"zsh"* ]]; then 
     echo "Changing shell to zsh..."
-    chsh -s $(which zsh)
+    chsh -s "$(which zsh)"
 fi
 echo ""
 {{ end }}

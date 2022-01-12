@@ -68,38 +68,21 @@ true_zen.setup({
     }
 })
 
--- changes the kitty font size
--- it's a bit glitchy, but it works
-local function kitty(enabled)
-  if not vim.fn.executable("kitty") then
-    return
-  end
-  local cmd = "kitty @ --to %s set-font-size %s"
-  local socket = vim.fn.expand("$KITTY_LISTEN_ON")
-  if enabled then
-    vim.fn.system(cmd:format(socket, "+4"))
-  else
-    vim.fn.system(cmd:format(socket, "0"))
-  end
-  vim.cmd([[redraw]])
-end
 
-true_zen.before_mode_atraxis_on = function ()
-    -- vim.api.nvim_command('NumbersDisable')
-    kitty('true')
-end
+-- true_zen.before_mode_atraxis_on = function ()
+-- end
 true_zen.after_mode_ataraxis_on = function ()
+    require('cmp').setup{ completion = { autocomplete = false } }
     vim.api.nvim_command('set nocursorline')
     vim.api.nvim_command('WP')
 end
 true_zen.before_mode_atraxis_off = function ()
     vim.api.nvim_command('NWP')
     vim.api.nvim_command('set cursorline')
+    require('cmp').setup{ completion = { autocomplete = true } }
 end
-true_zen.after_mode_atraxis_off = function ()
-    -- vim.api.nvim_command('NumbersEnable')
-    kitty('false')
-end
+-- true_zen.after_mode_atraxis_off = function ()
+-- end
 
 true_zen.before_mode_minimalist_on = function ()
     vim.api.nvim_command('NumbersDisable')
