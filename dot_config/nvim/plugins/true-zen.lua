@@ -69,20 +69,22 @@ true_zen.setup({
 })
 
 
--- true_zen.before_mode_atraxis_on = function ()
--- end
+true_zen.before_mode_atraxis_on = function ()
+    vim.api.nvim_command('IndentBlanklineDisable')
+end
 true_zen.after_mode_ataraxis_on = function ()
-    require('cmp').setup{ completion = { autocomplete = false } }
-    vim.api.nvim_command('set nocursorline')
     vim.api.nvim_command('WP')
+    vim.api.nvim_command('set nocursorline')
+    require('cmp').setup{ completion = { autocomplete = false } }
 end
 true_zen.before_mode_atraxis_off = function ()
     vim.api.nvim_command('NWP')
     vim.api.nvim_command('set cursorline')
     require('cmp').setup{ completion = { autocomplete = true } }
 end
--- true_zen.after_mode_atraxis_off = function ()
--- end
+true_zen.after_mode_atraxis_off = function ()
+    vim.api.nvim_command('IndentBlanklineEnable')
+end
 
 true_zen.before_mode_minimalist_on = function ()
     vim.api.nvim_command('NumbersDisable')

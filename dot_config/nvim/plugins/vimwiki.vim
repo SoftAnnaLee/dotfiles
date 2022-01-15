@@ -4,6 +4,8 @@ Plug 'michal-h21/vimwiki-sync'
 let g:vimwiki_list = [{'path': '~/vimwiki',
                      \ 'path_html': '~/vimwiki/html',
                      \ 'ext': '.md'}]
+
+let g:vimwiki_filetypes = ['markdown']
 "Custom linkhandler
 function! VimwikiLinkHandler(link)
     let link = a:link
