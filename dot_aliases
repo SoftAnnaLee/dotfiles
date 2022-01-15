@@ -39,7 +39,7 @@ alias g=git
 alias p=python
 alias vi=nvim
 alias cz=chezmoi
-alias cze="chezmoi edit"
+alias cze="chezmoi edit --apply"
 alias czg="/usr/bin/git --git-dir=$HOME/.local/share/chezmoi/.git/ --work-tree=$HOME/.local/share/chezmoi/"
 
 # Directory listing
@@ -58,5 +58,5 @@ alias so="source ~/.zshrc"
 alias vi="nvim"
 alias vim="nvim"
 alias vimwiki="nvim ~/vimwiki/index.md"
-alias vimconfig="chezmoi edit ~/.config/nvim/init.vim"
+alias vimconfig="chezmoi edit --apply ~/.config/nvim/init.vim"
 # alias termconfig="nvim /mnt/c/Users/SamanthaC/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
