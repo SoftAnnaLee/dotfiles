@@ -7,7 +7,7 @@
     # Install apt packages 
     echo "Installing packages..."
     sudo apt update && sudo apt upgrade
-    sudo apt-get -y install build-essential curl fd-find fzf git lolcat neofetch ranger ripgrep software-properties-common universal-ctags unzip zsh
+    sudo apt-get -y install build-essential curl fd-find fzf git lolcat neofetch ranger ripgrep software-properties-common tmux universal-ctags unzip zsh
     echo ""
     # Setup neovim
     echo "Installing neovim..."
@@ -23,6 +23,11 @@
     if [ ! -f "$HOME/dir_colors" ]; then
         echo "Installing Nord dir_colors..."
         curl -LO https://github.com/arcticicestudio/nord-dircolors/releases/download/v0.2.0/dir_colors
+    fi
+
+    # Install tmux plugins
+    if [ ! -f "$HOME/.tmux/plugins" ]; then
+        git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
     fi
 
     # Install rust
