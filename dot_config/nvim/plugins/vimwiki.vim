@@ -24,4 +24,5 @@ function! VimwikiLinkHandler(link)
 endfunction
 
 let g:vimwiki_conceallevel=0
-autocmd FileType vimwiki normal zR
+autocmd FileType vimwiki.markdown normal zR
+autocmd FileType vimwiki.markdown set filetype=markdown

@@ -71,8 +71,7 @@ call plug#begin()
     " source ~/.config/nvim/plugins/sneak.vim          "Find text by two letters
     source ~/.config/nvim/plugins/surround.vim       "Surround text objects with chars
  """ COMPLETION AND SNIPPETS
-    " Plug 'mfussenegger/nvim-dap'                   "Debug adapter protocol plugin
-    " Plug 'rcarriga/nvim-dap-ui'                    "nvim-dap UI
+    source ~/.config/nvim/plugins/vimspector.vim     "Debugging plugin
     source ~/.config/nvim/plugins/nvim-cmp.vim       "Completion framework
     source ~/.config/nvim/plugins/vsnip.vim          "Snippet engine
  """ SYNTAX AND LSP
