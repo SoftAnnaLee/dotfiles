@@ -1,6 +1,6 @@
 Plug 'simrat39/symbols-outline.nvim'
 
-nmap <silent> <F8> :SymbolsOutline<CR>
+nmap <silent> <F1> :SymbolsOutline<CR>
 
 augroup SymbolsOutlineOverrides
     autocmd!

@@ -30,7 +30,7 @@ let g:nord_cursorline_transparent = v:false
 " everything
 let g:nord_enable_sidebar_background = v:false
 " enables/disables italics
-let g:nord_italic = v:true
+let g:nord_italic = v:false
 
 augroup NordOverrides
     autocmd!

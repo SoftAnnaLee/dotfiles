@@ -1,28 +1,9 @@
 Plug 'vimwiki/vimwiki'
-Plug 'michal-h21/vimwiki-sync'
 
 let g:vimwiki_list = [{'path': '~/vimwiki',
                      \ 'path_html': '~/vimwiki/html',
-                     \ 'ext': '.md'}]
+                     \ 'ext': '.wiki'}]
 
-let g:vimwiki_filetypes = ['markdown']
-"Custom linkhandler
-function! VimwikiLinkHandler(link)
-    let link = a:link
-    if link =~# '^vim:'
-        let link = link[4:]
-        execute link
-        return 1
-    elseif link=~# '^vfile:'
-        let link = link[1:]
-        let link_infos = vimwiki#base#resolve_link(link)
-        execute 'edit '.fnameescape(link_infos.filename)
-        return 1
-    else
-        return 0
-    endif
-endfunction
-
-let g:vimwiki_conceallevel=0
-autocmd FileType vimwiki.markdown normal zR
-autocmd FileType vimwiki.markdown set filetype=markdown
+let g:vimwiki_fold_blank_lines = 1  " set to 1 to fold blank lines
+let g:vimwiki_header_type = '='     " set to '=' for wiki syntax
+let g:vimwiki_folding = ""
