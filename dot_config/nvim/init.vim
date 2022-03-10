@@ -58,17 +58,17 @@
     "\| endif
 
 call plug#begin()
+""" UI IMPROVEMENTS
+    source ~/.config/nvim/plugins/alpha.vim          "Fancy start screen
     source ~/.config/nvim/plugins/buftabline.vim     "Shows open buffers in a tabline
                                                      "Also includes nvim-web-devicons
     source ~/.config/nvim/plugins/lualine.vim        "Lightweight statusbar
     source ~/.config/nvim/plugins/nord.vim           "Nord theme for vim
-    " source ~/.config/nvim/plugins/zenbones.vim       "configurable theme for vim
  """ COMMANDS
     source ~/.config/nvim/plugins/commentary.vim     "Language agnostic commenting
     source ~/.config/nvim/plugins/fugitive.vim       "Git Wrapper
     source ~/.config/nvim/plugins/lion.vim           "Plugin to align text
     source ~/.config/nvim/plugins/lightspeed.vim     "motion plugin
-    " source ~/.config/nvim/plugins/sneak.vim          "Find text by two letters
     source ~/.config/nvim/plugins/surround.vim       "Surround text objects with chars
  """ COMPLETION AND SNIPPETS
     source ~/.config/nvim/plugins/vimspector.vim     "Debugging plugin
@@ -83,17 +83,15 @@ call plug#begin()
  """ TELESCOPE
     source ~/.config/nvim/plugins/telescope.vim      "Extendable fuzzy finder
  """ MISC.
-    " Plug 'vim-scripts/mru.vim'                     "Browse most recently used files
-    source ~/.config/nvim/plugins/alpha.vim          "Fancy start screen
     source ~/.config/nvim/plugins/auto-pairs.vim     "Auto type matching pairs (e.g. '[')
     source ~/.config/nvim/plugins/colorizer.vim      "Highlight colours as used in code
     source ~/.config/nvim/plugins/eunuch.vim         "Syntax sugar for unix commands
     source ~/.config/nvim/plugins/heritage.vim       "Creates missing parent directories
-    source ~/.config/nvim/plugins/indent-blank.vim   "Creates missing parent directories
+    source ~/.config/nvim/plugins/indent-blank.vim   "Shows indentation lines
     source ~/.config/nvim/plugins/lastplace.vim      "Intelligently reopen at last position
     source ~/.config/nvim/plugins/numbers.vim        "Auto swap in & out of relativenumber
     source ~/.config/nvim/plugins/peekaboo.vim       "Shows contents of registers
-    " source ~/.config/nvim/plugins/rooter.vim         "Automatically switch to project root
+    source ~/.config/nvim/plugins/pomodoro.vim       "Pomodoro timer within vim
     source ~/.config/nvim/plugins/project.vim        "Automatically switch to project root
                                                          "+ telescope integration
     source ~/.config/nvim/plugins/sayonara.vim       "Deletes and closes buffer smartly

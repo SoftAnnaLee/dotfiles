@@ -74,7 +74,7 @@ true_zen.before_mode_atraxis_on = function ()
 end
 true_zen.after_mode_ataraxis_on = function ()
     vim.api.nvim_command('WP')
-    vim.api.nvim_buf_set_keymap(0, 'i', '<BS>', '', { noremap = false, silent = true })
+    -- vim.api.nvim_buf_set_keymap(0, 'i', '<BS>', '', { noremap = false, silent = true })
     vim.api.nvim_command('set nocursorline')
     require('cmp').setup{ completion = { autocomplete = false } }
 end
@@ -85,7 +85,7 @@ true_zen.before_mode_atraxis_off = function ()
 end
 true_zen.after_mode_ataraxis_off = function ()
     vim.api.nvim_command('IndentBlanklineEnable')
-    vim.api.nvim_buf_set_keymap(0, 'i', '<BS>', '<BS>', { noremap = false, silent = true })
+    -- vim.api.nvim_buf_set_keymap(0, 'i', '<BS>', '<BS>', { noremap = false, silent = true })
 end
 
 true_zen.before_mode_minimalist_on = function ()
