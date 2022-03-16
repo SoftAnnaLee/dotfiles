@@ -45,17 +45,17 @@
 "" ╙───────────────────────────────────────────────────────────────────────────╜
 "" ╓───────────────────────────────────────────────────────────────────────────╖
 """║                                  PLUG.VIM                                 ║
-    "" Install vim-plug if not found
-    "let data_dir = has('nvim') ? stdpath('data') . '/site' : '~.vim'
-    "if empty(glob(data_dir . '/autoload/plug.vim'))
-    "    silent execute 'curl -fLo'.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-    "    autocmd VimEnter * PlugInstall --sync | source $VIMCONFIG
-    "endif
+    " Install vim-plug if not found
+    let data_dir = has('nvim') ? stdpath('data') . '/site' : '~.vim'
+    if empty(glob(data_dir . '/autoload/plug.vim'))
+        silent execute 'curl -fLo'.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+        autocmd VimEnter * PlugInstall --sync | source $VIMCONFIG
+    endif
 
-    "" Run PlugInstall if there are missing plugins
-    "autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-    "  \| PlugInstall --sync | source ~/.config/nvim/init.vim
-    "\| endif
+    " Run PlugInstall if there are missing plugins
+    autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+      \| PlugInstall --sync | source ~/.config/nvim/init.vim
+    \| endif
 
 call plug#begin()
 """ UI IMPROVEMENTS
@@ -200,18 +200,11 @@ doautocmd User PlugLoaded
     " Paste replace visual selection without copying it
     vnoremap <leader>p "_dP
 
-    " Make P act like other capitals
+    " Make Y act like other capitals
     nnoremap Y y$
 
     " Quickly exit to normal mode
     imap jj <esc>
-
-    "use :W to overcome permission errors
-    if has('nvim')
-        command! W execute 'w suda://%'
-    else
-        command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-    endif
 
     "Command to edit init.vim
     command! Config edit $VIMCONFIG
