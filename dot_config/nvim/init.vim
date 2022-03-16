@@ -262,34 +262,26 @@ doautocmd User PlugLoaded
 
 """" HEMINGWAY MODE
     func HemingwayMode()
-        let keys = ['<BS>',
-                   \'<Del>',
-                   \'<C-W>',
-                   \'<C-U>',
-                   \'<C-C>',
-                   \'<C-O>'
-                   \'<Up>'
-                   \'<Down>'
-                   \'<Left>'
-                   \'<Right>']
-        for key in keys
+        let evil_keys = ['<BS>', '<Del>', '<C-W>', '<C-U>', '<C-C>', '<C-O>', '<Up>', '<Down>', '<Left>', '<Right>']
+        :lua vim.api.nvim_buf_set_keymap(0, 'i', '<BS>', '', { noremap = false, silent = true })
+        for key in evil_keys
             " Disable evil keys in insert-mode
-            exe "inoremap " . key . ' <nop>'
+            exe 'inoremap ' . key . ' <nop>'
         endfor
     endfu
     com! HM call HemingwayMode()
     func HemingwayExit()
-        let keys = ['<BS>',
-                   \'<Del>',
-                   \'<C-W>',
-                   \'<C-U>',
-                   \'<C-C>',
-                   \'<C-O>'
-                   \'<Up>'
-                   \'<Down>'
-                   \'<Left>'
-                   \'<Right>']
-        for key in keys
+        let evil_keys = ['<Del>',
+                        \'<C-W>',
+                        \'<C-U>',
+                        \'<C-C>',
+                        \'<C-O>',
+                        \'<Up>',
+                        \'<Down>',
+                        \'<Left>',
+                        \'<Right>']
+        :lua vim.api.nvim_buf_set_keymap(0, 'i', '<BS>', '<BS>', { noremap = false, silent = true })
+        for key in evil_keys
             " Disable evil keys in insert-mode
             silent! exe "iunmap " . key
         endfor
