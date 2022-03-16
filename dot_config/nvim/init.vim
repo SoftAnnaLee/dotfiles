@@ -259,6 +259,42 @@ doautocmd User PlugLoaded
         set wrap<
     endfu
     com! NWP call NoWordProcessor()
+
+"""" HEMINGWAY MODE
+    func HemingwayMode()
+        let keys = ['<BS>',
+                   \'<Del>',
+                   \'<C-W>',
+                   \'<C-U>',
+                   \'<C-C>',
+                   \'<C-O>'
+                   \'<Up>'
+                   \'<Down>'
+                   \'<Left>'
+                   \'<Right>']
+        for key in keys
+            " Disable evil keys in insert-mode
+            exe "inoremap " . key . ' <nop>'
+        endfor
+    endfu
+    com! HM call HemingwayMode()
+    func HemingwayExit()
+        let keys = ['<BS>',
+                   \'<Del>',
+                   \'<C-W>',
+                   \'<C-U>',
+                   \'<C-C>',
+                   \'<C-O>'
+                   \'<Up>'
+                   \'<Down>'
+                   \'<Left>'
+                   \'<Right>']
+        for key in keys
+            " Disable evil keys in insert-mode
+            silent! exe "iunmap " . key
+        endfor
+    endfu
+    com! HE call HemingwayExit()
 "" ╙───────────────────────────────────────────────────────────────────────────╜
 "" ╓───────────────────────────────────────────────────────────────────────────╖
 """║                             FILETYPE SETTINGS                             ║
