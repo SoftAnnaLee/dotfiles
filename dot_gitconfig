@@ -3,3 +3,7 @@
 	name = SoftAnnaLee
 [color]
 	ui = auto
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
