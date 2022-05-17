@@ -27,6 +27,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 source "$HOME/.cargo/env"
 
+rm ~/.ssh/ssh_auth_sock
 # Automatically run ssh-agent and ssh-add when you login, taken from this
 # stackoverflow answer;
 # https://unix.stackexchange.com/a/217223

@@ -58,7 +58,7 @@
     \| endif
 
 call plug#begin()
-""" UI IMPROVEMENTS
+ """ UI IMPROVEMENTS
     source ~/.config/nvim/plugins/alpha.vim          "Fancy start screen
     source ~/.config/nvim/plugins/buftabline.vim     "Shows open buffers in a tabline
                                                      "Also includes nvim-web-devicons
@@ -79,12 +79,15 @@ call plug#begin()
     source ~/.config/nvim/plugins/nvim-lsp.vim       "Collection of common LSP client config
     source ~/.config/nvim/plugins/rust.vim           "Rust integration and commands
     source ~/.config/nvim/plugins/treesitter.vim     "Syntax tree highlighting
+    source ~/.config/nvim/plugins/typescript.vim     "Syntax and plugins for typescript
     source ~/.config/nvim/plugins/grammarous.vim     "Grammar checker using LanguageTool
+    source ~/.config/nvim/plugins/copilot.vim        "Github copilot
  """ TELESCOPE
     source ~/.config/nvim/plugins/telescope.vim      "Extendable fuzzy finder
  """ MISC.
     source ~/.config/nvim/plugins/auto-pairs.vim     "Auto type matching pairs (e.g. '[')
     source ~/.config/nvim/plugins/colorizer.vim      "Highlight colours as used in code
+    source ~/.config/nvim/plugins/editorconfig.vim   "Reads and applies .editorconfig files
     source ~/.config/nvim/plugins/eunuch.vim         "Syntax sugar for unix commands
     source ~/.config/nvim/plugins/heritage.vim       "Creates missing parent directories
     source ~/.config/nvim/plugins/indent-blank.vim   "Shows indentation lines
@@ -93,7 +96,7 @@ call plug#begin()
     source ~/.config/nvim/plugins/peekaboo.vim       "Shows contents of registers
     source ~/.config/nvim/plugins/pomodoro.vim       "Pomodoro timer within vim
     source ~/.config/nvim/plugins/project.vim        "Automatically switch to project root
-                                                         "+ telescope integration
+                                                     "+ telescope integration
     source ~/.config/nvim/plugins/sayonara.vim       "Deletes and closes buffer smartly
     source ~/.config/nvim/plugins/table-mode.vim     "Easy creation of text-based tables
     source ~/.config/nvim/plugins/symbol-outline.vim "Bar of tags on right side of window
