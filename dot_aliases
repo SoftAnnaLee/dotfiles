@@ -57,6 +57,6 @@ alias so="source ~/.zshrc"
 
 alias vi="nvim"
 alias vim="nvim"
-alias vimwiki="nvim ~/vimwiki/index.wiki"
+alias vimwiki="nvim ~/vimwiki/main_index.md"
 alias vimconfig="chezmoi edit --apply ~/.config/nvim/init.vim"
 # alias termconfig="nvim /mnt/c/Users/SamanthaC/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
